@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Pika Network Batch Vote Opener</title>
+    <style>
+      body {
+        font-family: system-ui, sans-serif;
+        text-align: center;
+        margin-top: 100px;
+        color: #333;
+      }
+      h1 {
+        color: #5865f2;
+      }
+      button {
+        background-color: #5865f2;
+        color: white;
+        font-size: 1.2rem;
+        padding: 12px 25px;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+      }
+      button:hover {
+        background-color: #4752c4;
+      }
+      p {
+        margin-top: 15px;
+        color: gray;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>when lazy wants to vote</h1>
+    <button id="openAll">useless</button>
+    <p>*turn your pop up thingie on if it doesn't work.</p>
+
+    <script>
+      const links = [
+        "https://vote.pika-network.net/1",
+        "https://vote.pika-network.net/2",
+        "https://vote.pika-network.net/3",
+        "https://vote.pika-network.net/4",
+        "https://vote.pika-network.net/5",
+        "https://vote.pika-network.net/6",
+        "https://vote.pika-network.net/7",
+        "https://top.gg/bot/1128280856839078000/vote"
+      ];
+
+      document.getElementById("openAll").addEventListener("click", () => {
+        links.forEach(url => window.open(url, "_blank"));
+      });
+    </script>
+  </body>
+</html>
